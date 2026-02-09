@@ -4,3 +4,13 @@
 // "odd" if the day of the month for that timestamp is odd.
 // "even" if the day of the month for that timestamp is even.
 // For example, given 1769472000000, a timestamp for January 27th, 2026, return "odd" because the day number (27) is an odd number.
+
+function oddOrEvenDay(timestamp) {
+  console.log(timestamp);
+  console.log(new Date(timestamp).getDate());
+  const date = new Date(timestamp).getDate();
+
+  return date % 2 === 0 ? 'odd' : 'even';
+
+  // return timestamp;
+}
